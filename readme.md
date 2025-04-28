@@ -27,7 +27,7 @@ git clone <repo_url>
 cd personalized-meal-planner
 ```
 
-    2. Install Dependencies 
+ 2. Install Dependencies 
 
    Frontend
 1. Navigate to the `public/` directory (where the HTML, CSS, and `Script.js` are stored).
@@ -41,7 +41,7 @@ cd personalized-meal-planner
 npm install
 ```
 
-    3. Environment Variables 
+3. Environment Variables 
 
    Grok API Key
 Create a `.env` file in the root folder (next to `Server.mjs`).
@@ -51,7 +51,7 @@ GROK_API_KEY=your_grok_api_key_here
 SPOONACULAR_API_KEY=your_spoonacular_api_key_here
 ```
 
-    4. Running the Server 
+4. Running the Server 
 
 Once the environment is set up, start the server with the following command:
 
@@ -61,7 +61,7 @@ npm start
 
 This will start the server on `http://localhost:3000`.
 
-    5. Running the Frontend 
+ 5. Running the Frontend 
 You can now open the `public/index.html` file in a browser to interact with the meal planner.
 
 ---
