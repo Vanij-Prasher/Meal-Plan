@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI-Powered Personalized Diet Planning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Personalized Diet Planning</h1>
+
+        <form id="diet-form">
+            <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="Enter your weight" required>
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" placeholder="Enter your height" required>
+            </div>
+
+            <div class="form-group">
+                <label for="health-condition">Health Condition</label>
+                <select id="health-condition" required>
+                    <option value="none" selected>None</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="cholesterol">Cholesterol</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="health-goal">Health Goal</label>
+                <select id="health-goal" required>
+                    <option value="" disabled selected>Select a health goal</option>
+                    <option value="weight loss">Weight Loss</option>
+                    <option value="muscle gain">Muscle Gain</option>
+                    <option value="maintain weight">Maintain Weight</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="allergies">Exclude Ingredients (e.g., Allergies)</label>
+                <select id="allergies" multiple>
+                    <option value="nuts">Nuts</option>
+                    <option value="gluten">Gluten</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="soy">Soy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="diet">Diet Type</label>
+                <select id="diet">
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="non-vegetarian">Non-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cuisine">Cuisine Type</label>
+                <select id="cuisine">
+                    <option value="indian">Indian</option>
+                    <option value="italian">Italian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="american">American</option>
+                    <option value="mediterranean">Mediterranean</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="max-calories">Max Calories</label>
+                <input type="number" id="max-calories" placeholder="Enter max calories">
+            </div>
+
+            <button type="submit">Generate Meal Plan</button>
+        </form>
+
+        <div id="meal-results" class="meal-results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI-Powered Personalized Diet Planning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Powered Personalized Diet Planning</h1>
+
+        <form id="diet-form">
+            <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="Enter your weight" required>
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" placeholder="Enter your height" required>
+            </div>
+
+            <div class="form-group">
+                <label for="health-condition">Health Condition</label>
+                <select id="health-condition" required>
+                    <option value="none" selected>None</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="cholesterol">Cholesterol</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="health-goal">Health Goal</label>
+                <select id="health-goal" required>
+                    <option value="" disabled selected>Select a health goal</option>
+                    <option value="weight loss">Weight Loss</option>
+                    <option value="muscle gain">Muscle Gain</option>
+                    <option value="maintain weight">Maintain Weight</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="allergies">Exclude Ingredients (e.g., Allergies)</label>
+                <select id="allergies" multiple>
+                    <option value="nuts">Nuts</option>
+                    <option value="gluten">Gluten</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="soy">Soy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="diet">Diet Type</label>
+                <select id="diet">
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="non-vegetarian">Non-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cuisine">Cuisine Type</label>
+                <select id="cuisine">
+                    <option value="indian">Indian</option>
+                    <option value="italian">Italian</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="american">American</option>
+                    <option value="mediterranean">Mediterranean</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="max-calories">Max Calories</label>
+                <input type="number" id="max-calories" placeholder="Enter max calories">
+            </div>
+
+            <button type="submit">Generate Meal Plan</button>
+        </form>
+
+        <div id="meal-results" class="meal-results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
